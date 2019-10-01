@@ -1,0 +1,23 @@
+li {
+  list-style-type: none;
+  display: block;
+  width: 33.33%;
+  float: left;
+  margin: auto;
+  padding: 15px 0;
+  background-color: black;
+  color: gray;
+}
+.menu-container {
+  background-color: black;
+  color: gray;
+  font-size: 20px;
+  width: 100%;
+}
+.list-container {
+  width: 100%;
+  background-color: black;
+  color: gray;
+  text-align: center;
+  margin: auto;
+}
