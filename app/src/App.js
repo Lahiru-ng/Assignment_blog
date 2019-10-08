@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 import "./App.css";
 import AddPost from "./pages/AddPost";
-import ViewPost from "./pages/ViewPost";
-import ListPost from "./pages/ViewPost";
+import ListPost from "./pages/ListPost";
 import Header from "./pages/Header";
+import Footer from "./pages/Footer";
 
 class App extends Component {
   state = {
@@ -16,11 +16,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="app-header-container ">
+        <div>
           <Header />
         </div>
-        <div className="app-addPost-container">
+        <div>
           <AddPost />
+        </div>
+        <div>
+          <ListPost />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     );

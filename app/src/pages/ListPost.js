@@ -1,13 +1,25 @@
 import React from "react";
-import Button from "../atomicComponents/Button";
+
+import { connect } from "react-redux";
+import ViewPost from "./ViewPost";
 
 class ListPost extends React.Component {
   render() {
     return (
-      <div>
-        <ViewPost />
+      <div className="post">
+        {this.props.posts.length !== 0 && (
+          <div>
+            {this.props.posts.map((singlePost, k) => {
+              return <ViewPost post={singlePost} />;
+            })}
+          </div>
+        )}
       </div>
     );
   }
 }
-export default ListPost;
+
+const mapStateToProps = state => {
+  return { posts: state.posts };
+};
+export default connect(mapStateToProps)(ListPost);

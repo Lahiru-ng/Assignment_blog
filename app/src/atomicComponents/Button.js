@@ -6,7 +6,11 @@ import "../Styles/fontawarsome/css/all.css";
 const Button = props => {
   return (
     <div className="button-container">
-      {props.type === "text" ? <button>{props.text}</button> : null}
+      {props.type === "text" ? (
+        <button value={props.type} onClick={props.handleClick}>
+          {props.text}
+        </button>
+      ) : null}
       <div>
         {props.type === "icon" && props.iconType === "close" ? (
           <button>
@@ -26,4 +30,4 @@ const Button = props => {
 };
 
 export default Button;
-
+// should apply prop types
