@@ -5,7 +5,7 @@ import Favor from "./Favor";
 
 import "../Styles/atomicComponents/button.css";
 import "../Styles/pages/header.css";
-//import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+//import { BrowserRouter as Router, Route} from "react-router-dom";
 import { BrowserRouter as Router, Route , Link, Switch } from 'react-router-dom';
 
 const Header = props => {

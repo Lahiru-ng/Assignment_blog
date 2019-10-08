@@ -2,14 +2,14 @@
   text-align: center;
 }
 .navbar-brand {
-  padding: 10px;
+  padding: 20px;
   width: 60%;
 }
 .nav-link {
   width: 100px;
 }
 .bg-light {
-  background-color: #c7c9cc !important;
+  background-color: #6395e0 !important;
 }
 a,
 a:hover {
