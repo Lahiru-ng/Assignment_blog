@@ -9,6 +9,16 @@ const posts = (state = [], action) => {
           favor: false
         }
       ];
+    case "DELETE_POST":
+      return state.filter(post => {
+        return post.id !== action.deleteId;
+      });
+
+    case "FAVOR_POST":
+      let changedState = JSON.parse(JSON.stringify(state));
+      changedState[action.selectedId].favor = action.favor;
+      return changedState;
+
     default:
       return state;
   }

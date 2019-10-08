@@ -18,5 +18,5 @@ storiesOf("button", module)
   .add("icon close", () => <Button type="icon" iconType="close" />);
 
 storiesOf("textArea", module).add("basic", () => (
-  <TextArea rows="5" cols="50" />
+  <TextArea rows="4" cols="10" />
 ));

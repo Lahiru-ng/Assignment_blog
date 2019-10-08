@@ -1,12 +1,15 @@
 import React from "react";
+import AddPost from "./AddPost";
+import ListPost from "./ListPost";
 
-class ListPost extends React.Component {
+class Home extends React.Component {
   render() {
     return (
       <div>
-        <ViewPost />
+        <AddPost />
+        <ListPost />
       </div>
     );
   }
 }
-export default ListPost;
+export default Home;

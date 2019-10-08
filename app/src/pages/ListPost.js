@@ -10,7 +10,7 @@ class ListPost extends React.Component {
         {this.props.posts.length !== 0 && (
           <div>
             {this.props.posts.map((singlePost, k) => {
-              return <ViewPost post={singlePost} />;
+              return <ViewPost key={k} postKey={k} post={singlePost} />;
             })}
           </div>
         )}

@@ -1,8 +1,8 @@
 .text-container {
   text-align: right;
-  padding-right: 3%;
-  border-color: blue;
+  padding-right: 5%;
+  border-color: rgba(5, 5, 36, 0.103);
 }
 textarea.form-control {
-  color: #63aeeb;
+  color: #5e2ce7;
 }

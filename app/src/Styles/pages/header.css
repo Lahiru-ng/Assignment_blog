@@ -11,3 +11,7 @@
 .bg-light {
   background-color: #c7c9cc !important;
 }
+a,
+a:hover {
+  color: black;
+}
